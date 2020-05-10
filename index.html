@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEWEL HUB</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow|Cardo&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/a2f7054ed6.js" crossorigin="anonymous"></script>
+    
+
+</head>
+<body>
+
+<!------------- NAV ------------->
+    <nav>
+        <ul id="menu" class="menuInitialPosition">
+            <button id="button" onclick="toggleMenu()" >Show/Hide</button>
+            <li><a href="#" class="menu">Home</a>
+            </li>
+            <li>
+                <a href="#" class="menu">Shop</a>
+            </li>
+            <li>
+                <a href="#" class="menu">Blog</a>
+            </li>
+            <li><a href="#" class="menu">Connect</a></li>
+        </ul>
+    </nav>
+<!-------------END OF NAV! ------------->
+
+
+
+<!------------- Header ------------->
+    <header>
+        <label for="h-menu">
+            <p class="top logo">JEWEL 
+                <BR>//HUB</BR>
+            </p>
+        </label>
+        <input type="checkbox" id="h-menu" class="toggle-hmenu">
+
+        
+        <div class="wrapper">
+            <h1>Layering Collection</h1>
+            <a href="#" class="button">Shop now</a>
+        </div>
+    </header>
+<!------------- End of Header ------------->
+
+
+
+<!------------- MAIN ------------->
+    <main>
+    <!------------- SECTION ONE ------------->
+        <section class="one wrapper">
+            <img src="./Assets/model.jpg" alt="Image of a model showcasing the beautiful necklace of a shape of Africa" class="model">
+            <div>
+                <h2>Check out new arrivals</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ducimus, numquam veniam quam dignissimos soluta pariatur possimus dicta magnam eligendi aut sed nesciunt alias excepturi? Culpa tempore quae repellat temporibus, autem maxime consequuntur dolorem tenetur, sint accusantium facere laboriosam! Repellat dignissimos distinctio quibusdam modi exercitationem ea architecto nesciunt vero nobis.</p>
+                <a href="#" class="button">Shop now</a>
+            </div>
+        </section>
+    <!------------- END OF SECTION ONE ------------->
+
+
+
+    <!------------- SECTION TWO ------------->
+        <section class="two">
+                <!-- <input id="input" type="number" placeholder="Carousel Speed">
+                <button id="submit" onclick="">Submit</button> -->
+            <div class="wrapper two-contents">
+                
+                <i onclick="moveLeft()" class="fas fa-angle-left carousel" style="cursor: pointer;"></i>
+                
+                <div id='carouselContent' class="blog">
+                    <h3 id='title'></h3>
+                    <h2 id='subtitle'></h2>
+                    <p id='mainContent'></p>
+                </div>
+
+                <i onclick="moveRight()" class="fas fa-angle-right carousel" style="cursor: pointer;"></i>
+                <a href="#" class="button">Learn more</a>
+            </div>
+        </section>
+    <!------------- END OF SECTION 2 ------------->
+
+
+
+        <!------------- SECTION 3 ------------->
+        <section class="three wrapper">
+                <h2>Featured Items</h2>
+                <div class="items">
+                    <section class="product">
+                        <img src="Assets/chains.jpg" class="chain">
+                        <div class="details">
+                            <h4>Dole chains & pendants</h4>
+                            <h4 class="costs">$50</h4>
+                        </div>
+                    </section>
+                    <section class="product"> 
+                        <img src="Assets/ring-model.jpg" class="ring">
+                        <div class="details">
+                            <h4>Made of steel ring</h4>
+                            <h4 class="costs">$30</h4>
+                        </div>
+                    </section>
+                    <section class="product"> 
+                        <img src="Assets/watch-model.jpg" class="watch">
+                        <div class="details">
+                            <h4>Malvori <br>watch</h4>
+                            <h4 class="costs">$120</h4>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <!---------- END OF SECTION 3 ---------->
+    </main>
+    <!---------- END OF MAIN ---------->
+
+
+    <!---------- FOOTER ---------->
+    <footer>
+        <form action="" method="GET" name="contactUs" id="contactUs" class="wrapper">
+            
+            <h2>Contact us</h2>
+            <div>
+                <label for="name" hidden>enter your name</label>
+                <input type="text" id="name" placeholder="Name" required>
+                <label for="email" hidden>enter your email</label>
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <label for="message" hidden>enter your message</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+            
+            <label for="submit" hidden>click submit button to submit</label>
+            <button id="submit" class="button">Submit</button>
+        </form>
+    </footer>
+    <p class="bottom logo">JEWEL <BR>//HUB</BR></p>
+    <!---------- END OF FOOTER ---------->
+
+    <!-- <script src="./index.js"></script> -->
+    <script src="./index.js"></script>
+</body>
+</html>
